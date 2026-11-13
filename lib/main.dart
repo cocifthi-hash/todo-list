@@ -64,6 +64,8 @@ class NotificationService {
             'task_reminders', 'Task reminders', channelDescription: 'Reminders for your tasks',
             importance: Importance.defaultImportance, priority: Priority.defaultPriority)),
           androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+          uiLocalNotificationDateInterpretation:
+              UILocalNotificationDateInterpretation.absoluteTime,
           payload: task.id,
         );
       }
